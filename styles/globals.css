@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #000000;
+    height: 100%;
+    min-width: 320px !important;
+    /* max-width: 1600px !important; */
+}
+
+._section {
+    @apply w-full
+}
+._wrapper {
+    @apply px-5 max-w-[1200px] mx-auto
+}
+._h{
+    @apply uppercase text-left md:text-center block w-full
+        leading-[80%]
+        text-[70px] xs:text-[80px] sm:text-[90px] md:text-[100px] lg:text-[110px] xl:text-[130px] 2xl:text-[160px]
+}
+._button{
+    @apply font-extrabold text-[16px] xs:text-[18px] sm:text-[20px] md:text-[22px] py-3.5 md:py-7 rounded-lg md:rounded-[20px] uppercase block
+}
