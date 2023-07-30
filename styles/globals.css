@@ -21,5 +21,11 @@ body {
         text-[70px] xs:text-[80px] sm:text-[90px] md:text-[100px] lg:text-[110px] xl:text-[130px] 2xl:text-[160px]
 }
 ._button{
-    @apply font-extrabold text-[16px] xs:text-[18px] sm:text-[20px] md:text-[22px] py-3.5 md:py-7 rounded-lg md:rounded-[20px] uppercase block
+    @apply font-extrabold text-[16px] xs:text-[18px] sm:text-[20px] md:text-[22px] py-3.5 sm:py-4 md:py-5 lg:py-7 rounded-lg md:rounded-[20px] uppercase block
+}
+._text-26-40{
+    @apply text-[26px] xs:text-[28px] sm:text-[32px] md:text-[34px] lg:text-[36px] xl:text-[40px]
+}
+._text-12-20{
+    @apply text-[12px] xs:text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] 
 }

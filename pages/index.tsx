@@ -1,4 +1,3 @@
-import Nav from '@/components/sections/01Nav'
 import Header from '@/components/sections/02Header'
 import Mission from '@/components/sections/03Mission'
 import Tokenomics from '@/components/sections/04Tokenomics'

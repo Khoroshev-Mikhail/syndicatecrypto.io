@@ -11,48 +11,75 @@ import grid from '../../public/img/02Header/grid.png'
 import tg from '../../public/img/01Nav/tg.svg'
 import twitter from '../../public/img/01Nav/twitter.svg'
 import burger from '../../public/img/01Nav/burger.svg'
+import cross from '../../public/img/01Nav/cross.svg'
 import burger_mobile from '../../public/img/01Nav/burger_mobile.svg'
+import { useState } from "react";
+import Social from "../elements/Social";
 
 export default function Header(){
+    const [ isHidden, setIsHidden ] = useState<boolean>(true)
     return(
-        <section className="_section relative flex flex-col bg-[url('/img/02Header/smoke_mobile.png')] md:bg-[url('/img/02Header/smoke.png')] bg-no-repeat bg-bottom bg-cover">
-            {/* <Image src={main} alt="SYNDYCATE" className="absolute w-full"/> */}
+        <section id="02Header" className="_section relative flex flex-col bg-[url('/img/02Header/smoke_mobile.png')] md:bg-[url('/img/02Header/smoke.png')] bg-no-repeat bg-bottom bg-cover">
+
             <div className="_wrapper w-full">
                 <div className="flex justify-between my-4 md:my-8 xl:my-10">
-                    <div className="hidden md:flex gap-x-1 ">
-                        <Image src={twitter} alt="Twitter" className="block"/>
-                        <Image src={tg} alt="Telegram" className="block"/>
+                    <div className="hidden md:block">
+                        <Social />
                     </div>
 
                     <h1 className={`${BEBAS_NEUE} text-_blue md:text-white block uppercase
-                        text-[26px] xs:text-[28px] sm:text-[30px] md:text-[32px] lg:text-[34px] xl:text-[36px] 2xl:[40px]
+                        _text-26-40
                     `}>
                         SYNDICATE DEFI HUNTERS
                     </h1>
 
-                    <div className="flex flex-col justify-center pb-1">
+                    <div className="flex flex-col justify-center pb-1 relative z-40" onClick={()=> setIsHidden(false) }>
                         <Image src={burger} alt="Menu" className="hidden md:block"/>
                         <Image src={burger_mobile} alt="Menu" className="block md:hidden"/>
                     </div>
                 </div>
             </div>
 
+            {/* Выдвижное меню */}
+            <div className={`${isHidden ? 'hidden' : 'block'} absolute z-50 top-0 left-0 w-full min-h-screen bg-_blue rounded-b-2xl `}>
+                <menu className={`${BEBAS_NEUE} _wrapper text-[40px] sm:text-[48px] md:text-[56px] lg:text-[60px] xl:text-[66px] text-white`}>
+                    <li className="flex justify-end py-[13px] sm:py-[26px] md:py-[39px] ">
+                        <Image className="cursor-pointer w-[30px] h-[30px] sm:w-[49px] sm:h-[49px]" src={ cross } alt="menu-toggle" onClick={()=> setIsHidden(true) }/>
+                    </li>
+                    <li className="flex justify-end w-full" onClick={()=> setIsHidden(true) }><a href="#02Header">HOME</a></li>
+                    <li className="flex justify-end w-full"><a href="#03Mission">MISSION</a></li>
+                    <li className="flex justify-end w-full"><a href="#04Tokenomics">TOKENOMICS</a></li>
+                    <li className="flex justify-end w-full"><a href="#05Partners">PARTNERS</a></li>
+                    <li className="flex justify-end w-full"><a href="#06Roadmap">ROADMAP</a></li>
+                    <li className="flex justify-end w-full"><a href="#07Feedback">CONTACTS</a></li>
+                    <li className="pt-[60px] xl:pt-[100px]">
+                        {/* <Social green/> */}
+                    </li>
+                    <li className=" absolute w-full left-0 bottom-[20px] px-[20px]">
+                        {/* <Buynow /> Если нужна прыгающая кнопка - просто добави в классы animate-bounce */}
+                    </li>
+                </menu>
+            </div>
+            {/* Выдвижное меню */}
 
             <div className="w-full mx-auto relative">
-                <Image src={main} alt="SYNDYCATE" className="hidden md:block xl:-mt-36 sm:-mt-20 xl:-mb-56 w-full"/>
-                <Image src={main_mobile} alt="SYNDYCATE" className="block pt-24 -mb-6 xs:-mb-10 sm:-mb-20 md:hidden w-full"/>
+            {/* xl:-mt-32 sm:-mt-20 md:-mb-40 xl:-mb-56 */}
+                <Image src={main} alt="SYNDYCATE" className="hidden md:block md:-mt-[7%] -mt-[10%] -mb-[14%] w-full"/>
+                <Image src={main_mobile} alt="SYNDYCATE" className="block md:hidden pt-24 -mb-6 xs:-mb-10 sm:-mb-20  w-full"/>
 
-                <div className="absolute w-full flex justify-center bottom-0">
-                    
-                </div>
-                <div className="_wrapper !pr-2 absolute top-10">
-                    <h2 className={`${BEBAS_NEUE} _h`}>
+                <div className="_wrapper w-full !max-w-none !pr-2 absolute top-10 left-0 md:text-center">
+                    <h2 className={`${BEBAS_NEUE} _h relative`}>
                         BE PART <br className="md:hidden"/>
                         <span className="italic">OF</span> <span className="text-_green">SYNDICATE</span>
+                        <div className="absolute top-0 right-0 flex justify-end w-full md:hidden">
+                            <Social />
+                        </div>
                     </h2>
                 </div>
-                <div className="_wrapper absolute w-full flex-col justify-center bottom-[7%] xs:bottom-[7%] sm:bottom-[5.5%] md:bottom-[40%]">
-                    <Image src={xxx} alt="x X x" className="mx-auto w-10 xs:w-12 sm:w-14 md:w-auto"/>
+                <div className="absolute bottom-[16%] xs:bottom-[15%] sm:bottom-[12%] md:top-0 md:bottom-auto w-full flex justify-center">
+                    <Image src={xxx} alt="x X x" className="mx-auto w-10 xs:w-12 sm:w-14 md:р"/>
+                </div>
+                <div className="_wrapper !max-w-none absolute w-full flex-col justify-center bottom-[7%] xs:bottom-[7%] sm:bottom-[5.5%] md:bottom-[10%] lg:bottom-[14%]">
                     <button className="block mt-4 mx-auto order-5 uppercase bg-_green w-full md:w-[235px] _button text-black">
                         BUY <span className="md:hidden">NOW</span>
                     </button>
@@ -75,7 +102,7 @@ export default function Header(){
                 </div>
             </div> */}
 
-            <div className="w-full relative z-50">
+            <div className="w-full relative z-40">
                 <Ticker />
             </div>
 

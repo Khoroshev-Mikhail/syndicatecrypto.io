@@ -8,7 +8,7 @@ import fifth from '../../public/img/05Partners/5.svg'
 
 export default function Partners(){
     return(
-        <section className="_section mt-[52px] md:mt-[112px]">
+        <section id="05Partners" className="_section pt-[52px] md:pt-[112px]">
             <div className="_wrapper">
                 <h2 className={`${BEBAS_NEUE} _h `}>
                     OUR <span className="text-_green">PARTNERS</span>

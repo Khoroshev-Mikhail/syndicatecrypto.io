@@ -11,7 +11,7 @@ import coins from '../../public/img/06Roadmap/coins.png'
 
 export default function Roadmap(){
     return(
-        <section className="_section relative bg-no-repeat mt-36">
+        <section id="06Roadmap" className="_section relative bg-no-repeat mt-36">
 
             <Image src={bg_mobile} alt="bg" className="absolute h-full w-full top-14 pb-10 sm:pb-6 lg:hidden"/>
 
@@ -29,11 +29,11 @@ export default function Roadmap(){
 
                     <div className="flex flex-col lg:flex-row w-full gap-5">
                         <div className="w-full lg:w-1/2">
-                            <div className="flex bg-_black_div rounded-[20px] h-auto p-10 w-full">
-                                <span className={`${BEBAS_NEUE} block w-1/3 uppercase text-_blue text-[26px] sm:text-[30px] md:text-[34px] xl:text-[40px]`}>
+                            <div className="flex flex-col xs:flex-row bg-_black_div rounded-[20px] h-auto p-6 xs:p-10 w-full">
+                                <span className={`${BEBAS_NEUE} block w-full xs:w-1/3 uppercase text-_blue text-[26px] sm:text-[30px] md:text-[34px] xl:text-[40px]`}>
                                     PHASE 1
                                 </span>
-                                <ul className="block text-[16px] sm:text-[18px] md:text-[20px]">
+                                <ul className="ml-4 w-full xs:w-2/3 block text-[16px] sm:text-[18px] md:text-[20px]">
                                     <li>Website Launch</li>
                                     <li>Presale and Uniswap Launch</li>
                                     <li>Marketing Company</li>
@@ -48,11 +48,11 @@ export default function Roadmap(){
                             <Image src={arrow_1} alt="arrow" className="hidden lg:inline absolute top-4 -left-28"/>
                             <Image src={arrow_mobile} alt="arrow" className="absolute -top-[45%] -right-2 lg:hidden"/>
 
-                            <div className="flex bg-_black_div rounded-[20px] h-auto p-10 w-full">
-                                <span className={`${BEBAS_NEUE} block w-1/3 uppercase text-_blue text-[26px] sm:text-[30px] md:text-[34px] xl:text-[40px]`}>
+                            <div className="flex flex-col xs:flex-row bg-_black_div rounded-[20px] h-auto p-6 xs:p-10 w-full">
+                                <span className={`${BEBAS_NEUE} block w-full xs:w-1/3 uppercase text-_blue text-[26px] sm:text-[30px] md:text-[34px] xl:text-[40px]`}>
                                     PHASE 2
                                 </span>
-                                <ul className="block text-[16px] sm:text-[18px] md:text-[20px]">
+                                <ul className="ml-4 w-full xs:w-2/3 block text-[16px] sm:text-[18px] md:text-[20px]">
                                     <li>Listing on Coinmarketcap</li>
                                     <li>Listing on Coingeko</li>
                                     <li>Trends on Dextools</li>
@@ -69,11 +69,11 @@ export default function Roadmap(){
                             <Image src={arrow_2} alt="arrow" className="hidden lg:inline absolute -top-14 -right-16"/>
                             <Image src={arrow_mobile} alt="arrow" className="absolute -top-[45%] -left-2 transform scale-x-[-1] lg:hidden"/>
 
-                            <div className="flex bg-_black_div rounded-[20px] h-auto p-10 w-full">
-                                <span className={`${BEBAS_NEUE} block w-1/3 uppercase text-_blue text-[26px] sm:text-[30px] md:text-[34px] xl:text-[40px]`}>
+                            <div className="flex flex-col xs:flex-row bg-_black_div rounded-[20px] h-auto p-6 xs:p-10 w-full">
+                                <span className={`${BEBAS_NEUE} block w-full xs:w-1/3 uppercase text-_blue text-[26px] sm:text-[30px] md:text-[34px] xl:text-[40px]`}>
                                     PHASE 3
                                 </span>
-                                <ul className="block text-[16px] sm:text-[18px] md:text-[20px]">
+                                <ul className="ml-4 w-full xs:w-2/3 block text-[16px] sm:text-[18px] md:text-[20px]">
                                     <li>NFT Collection Launch</li>
                                     <li>Global Marketing Campaign</li>
                                     <li>7000 Syndicate Holders</li>
@@ -86,11 +86,11 @@ export default function Roadmap(){
                             <Image src={arrow_3} alt="arrow" className="hidden lg:inline absolute bottom-4 -left-28"/>
                             <Image src={arrow_mobile} alt="arrow" className="absolute -top-[45%] -right-2 lg:hidden"/>
                             
-                            <div className="flex bg-_black_div rounded-[20px] h-auto p-10 w-full">
-                                <span className={`${BEBAS_NEUE} block w-1/3 uppercase text-_blue text-[26px] sm:text-[30px] md:text-[34px] xl:text-[40px]`}>
+                            <div className="flex flex-col xs:flex-row bg-_black_div rounded-[20px] h-auto p-6 xs:p-10 w-full">
+                                <span className={`${BEBAS_NEUE} block w-full xs:w-1/3 uppercase text-_blue text-[26px] sm:text-[30px] md:text-[34px] xl:text-[40px]`}>
                                     PHASE 4
                                 </span>
-                                <ul className="block text-[16px] sm:text-[18px] md:text-[20px]">
+                                <ul className="ml-4 w-full xs:w-2/3 block text-[16px] sm:text-[18px] md:text-[20px]">
                                     <li>Tier-1 CEX Listings</li>
                                     <li>10000 Syndicate Holders</li>
                                     <li>Global Charity Campaign</li>

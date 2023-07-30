@@ -9,15 +9,15 @@ import hackers_mobile from '../../public/img/07Feedback/hackers_mobile.png'
 import eclipse_mobile from '../../public/img/07Feedback/eclipse_mobile.png'
 import grid from '../../public/img/07Feedback/grid.png'
 import grid_mobile from '../../public/img/07Feedback/grid_mobile.png'
+import Social from "../elements/Social";
 
 export default function Feedback(){
     return(
-        <section className="_section mt-10 sm:mt-14 md:mt-20 bg-[url('/img/07Feedback/smoke.png')] bg-no-repeat bg-top bg-cover overflow-hidden">
+        <section id="07Feedback" className="_section pt-10 sm:pt-14 md:pt-20 bg-[url('/img/07Feedback/smoke.png')] bg-no-repeat bg-top bg-cover overflow-hidden">
             <div className="_wrapper flex flex-col bg-_blue rounded-t-[20px] !mx-5 xl:!mx-auto relative ">
 
-                <div className="order-1 w-full flex justify-start md:justify-center gap-x-1 mt-5 md:mt-10 relative z-50">
-                    <Image src={twitter} alt="Twitter" className="block"/>
-                    <Image src={tg} alt="Telegram" className="block"/>
+                <div className="order-1 w-full flex justify-start md:justify-center mt-5 md:mt-10 relative z-50">
+                    <Social white/>
                 </div>
 
                 <h2 className={`${BEBAS_NEUE} _h order-2 mt-[30px] md:mt-[54px] relative z-50`}>
@@ -31,9 +31,9 @@ export default function Feedback(){
                 <Image src={xxx} alt="x X x" className="block order-4 md:order-3 w-[38px] sm:w-[50px] md:w-[70px] md:mx-auto mt-[18px] md:mt-0 relative z-50"/>
 
                 <form className="flex order-5 flex-col md:flex-row mt-[24px] md:mt-[30px] gap-2.5 relative z-50">
-                    <input type="text" className="block md:w-1/3 rounded-[20px] bg-[#A0A9FF] px-9 py-4 font-medium text-[16px] border-[2px] border-white placeholder-white::placeholder" placeholder="name"/>
-                    <input type="text" className="block md:w-1/3 rounded-[20px] bg-[#A0A9FF] px-9 py-4 font-medium text-[16px] border-[2px] border-white placeholder-white::placeholder" placeholder="email"/>
-                    <button type="submit" className="uppercase block md:w-1/3 rounded-[20px] bg-[#A0A9FF] md:bg-_green py-4 text-center font-extrabold text-black">SEND</button>
+                    <input type="text" className="block md:w-1/3 rounded-[20px] bg-[#A0A9FF] px-9 py-4 font-medium text-[16px] border-[2px] border-white placeholder-white" placeholder="Name"/>
+                    <input type="text" className="block md:w-1/3 rounded-[20px] bg-[#A0A9FF] px-9 py-4 font-medium text-[16px] border-[2px] border-white placeholder-white" placeholder="Email"/>
+                    <button type="submit" className="uppercase block md:w-1/3 rounded-[20px] bg-_green py-4 text-center font-extrabold text-black">SEND</button>
                 </form>
 
                 <div className="relative pb-[55%] md:pb-[50%] order-6">
