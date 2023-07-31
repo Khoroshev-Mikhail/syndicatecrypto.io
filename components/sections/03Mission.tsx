@@ -1,14 +1,10 @@
 import { BEBAS_NEUE } from "@/pages/_app";
 import Image from "next/image";
 import coins from '../../public/img/03Mission/coins.webp'
-import smoke from '../../public/img/03Mission/smoke.webp'
-import smoke_mobile from '../../public/img/03Mission/smoke_mobile.webp'
 
 export default function Mission(){
     return(
-        <section id="03Mission" className="_section pt-[50px] xs:pt-[60px] md:pt-20 relative">
-            <Image src={smoke} alt="smoke" className="hidden xs:block absolute w-full top-0 left-0 z-0"/>
-            <Image src={smoke_mobile} alt="smoke" className="xs:hidden blcok absolute w-full top-0 left-0 z-0"/>
+        <section id="03Mission" className="_section pt-[50px] xs:pt-[60px] md:pt-20 relative bg-[url('/img/03Mission/smoke_mobile.webp')] md:bg-[url('/img/03Mission/smoke.webp')] bg-no-repeat bg-bottom bg-cover">
             <div className="_wrapper relative z-30">
                 <h2 className={`${BEBAS_NEUE} _h `}>
                     OUR <span className="text-_green">MISSION</span>
