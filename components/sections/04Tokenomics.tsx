@@ -19,13 +19,13 @@ export default function Tokenomics(){
             {/* BG ECLIPSE */}
 
             <div className="_wrapper flex flex-col">
-            <h2 className={`${BEBAS_NEUE} _h `}>
+            <h2 data-aos="fade-right" data-aos-duration="1500" className={`${BEBAS_NEUE} _h `}>
                 OUR <span className="text-_green">TOKENOMICS</span>
             </h2>
 
                 <div  className="relative w-full z-30 grid grid-cols-1 grid-rows-1 gap-y-[5px] mt-[40px] sm:grid-cols-2 sm:grid-rows-6 sm:gap-y-[10px] sm:gap-x-[20px] md:mt-[50px] lg:mt-[60px] xl:mt-[80px]">
 
-                    <div className="col-span-1 row-span-1 p-[30px] bg-[#191C25] rounded-2xl _shadow sm:p-[27px] sm:col-start-1 sm:col-end-2 sm:row-span-2 sm:row-start-1 sm:row-end-3">
+                    <div data-aos="fade-right" data-aos-duration="1500" className="col-span-1 row-span-1 p-[30px] bg-[#191C25] rounded-2xl _shadow sm:p-[27px] sm:col-start-1 sm:col-end-2 sm:row-span-2 sm:row-start-1 sm:row-end-3">
                         <p className={`${BEBAS_NEUE} _text-26-40 uppercase`}>
                             <Image src={total_supply} alt="icon" className="relative inline mr-[15px] top-[2px] left-[-2px]"/>
                             Total Supply
@@ -35,7 +35,7 @@ export default function Tokenomics(){
                         </p>
                     </div>
 
-                    <div className="col-span-1 row-span-1 p-[30px] bg-[#191C25] rounded-2xl _shadow sm:p-[27px] sm:col-start-1 sm:col-end-2 sm:row-span-2 sm:row-start-3 sm:row-end-5">
+                    <div data-aos="fade-right" data-aos-duration="1500" className="col-span-1 row-span-1 p-[30px] bg-[#191C25] rounded-2xl _shadow sm:p-[27px] sm:col-start-1 sm:col-end-2 sm:row-span-2 sm:row-start-3 sm:row-end-5">
                         <p className={`${BEBAS_NEUE} _text-26-40 uppercase`}>
                             <Image src={total_security} alt="icon" className="relative inline mr-[15px] top-[2px] left-[-2px]"/>
                             Total Security
@@ -45,7 +45,7 @@ export default function Tokenomics(){
                         </p>
                     </div>
 
-                    <div onClick={copy} className="relative cursor-pointer col-span-1 row-span-1 p-[30px] bg-[#191C25] rounded-2xl _shadow sm:p-[27px] sm:col-start-1 sm:col-end-2 sm:row-span-2 sm:row-start-5 sm:row-end-7">
+                    <div data-aos="fade-right" data-aos-duration="1500" onClick={copy} className="relative cursor-pointer col-span-1 row-span-1 p-[30px] bg-[#191C25] rounded-2xl _shadow sm:p-[27px] sm:col-start-1 sm:col-end-2 sm:row-span-2 sm:row-start-5 sm:row-end-7">
                         <Image src={copy_icon} alt="icon" className="absolute top-[10px] right-[10px] w-[20px]"/>
                         <p className={`${BEBAS_NEUE} _text-26-40 uppercase`}>
                             <Image src={smart_contract} alt="icon" className="relative inline mr-[15px] top-[2px] left-[-2px]"/>
@@ -56,8 +56,8 @@ export default function Tokenomics(){
                         </p>
                     </div>
 
-                    <div className="md:mt-8 col-span-1 row-span-1 p-[30px] bg-[#191C25] rounded-2xl _shadow flex flex-col justify-center sm:p-[27px] sm:col-start-2 sm:col-end-3 sm:row-span-3 sm:row-start-1 sm:row-end-4">
-                        <div>
+                    <div data-aos="fade-right" data-aos-duration="1500" className="md:mt-8 col-span-1 row-span-1 p-[30px] bg-[#191C25] rounded-2xl _shadow flex flex-col justify-center sm:p-[27px] sm:col-start-2 sm:col-end-3 sm:row-span-3 sm:row-start-1 sm:row-end-4">
+                        <div >
                             <p className={`${BEBAS_NEUE} _text-26-40 uppercase`}>
                                 <Image src={sell_tax} alt="icon" className="relative inline mr-[15px] top-[2px] left-[-2px]"/>
                                 Sell Tax
@@ -76,8 +76,8 @@ export default function Tokenomics(){
                         </div>
                     </div>
 
-                    <div className="md:mb-8 col-span-1 row-span-1 p-[30px] bg-[#191C25] rounded-2xl _shadow flex flex-col justify-center sm:p-[27px] sm:col-start-2 sm:col-end-3 sm:row-span-3 sm:row-start-4 sm:row-end-7">
-                        <div>
+                    <div data-aos="fade-right" data-aos-duration="1500" className="md:mb-8 col-span-1 row-span-1 p-[30px] bg-[#191C25] rounded-2xl _shadow flex flex-col justify-center sm:p-[27px] sm:col-start-2 sm:col-end-3 sm:row-span-3 sm:row-start-4 sm:row-end-7">
+                        <div >
                             <p className={`${BEBAS_NEUE} _text-26-40 uppercase`}>
                                 <Image src={buy_tax} alt="icon" className="relative inline mr-[15px] top-[2px] left-[-2px]"/>
                                 Buy Tax
@@ -98,7 +98,7 @@ export default function Tokenomics(){
 
                 </div>
 
-                <button className="relative z-50 mt-[30px] md:mt-[54px] _button mx-auto order-5  bg-_blue w-full xs:w-[287px] ">
+                <button data-aos="zoom-in" data-aos-duration="1000" className="relative z-50 mt-[30px] md:mt-[54px] _button mx-auto order-5  bg-_blue w-full xs:w-[287px] ">
                     AUDIT CERTIFICATE
                 </button>
 

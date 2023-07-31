@@ -41,24 +41,24 @@ export default function Feedback(){
         <section id="07Feedback" className="_section pt-10 sm:pt-14 md:pt-20 bg-[url('/img/07Feedback/smoke.webp')] bg-no-repeat bg-top bg-cover overflow-hidden">
             <div className="_wrapper flex flex-col bg-_blue rounded-t-[20px] !mx-5 xl:!mx-auto relative ">
 
-                <div className="order-1 w-full flex justify-start md:justify-center mt-5 md:mt-10 relative z-50">
+                <div data-aos="fade-right" data-aos-duration="1500" className="order-1 w-full flex justify-start md:justify-center mt-5 md:mt-10 relative z-50">
                     <Social white/>
                 </div>
 
-                <h2 className={`${BEBAS_NEUE} _h order-2 mt-[30px] md:mt-[54px] relative z-50`}>
+                <h2 data-aos="fade-right" data-aos-duration="1500" className={`${BEBAS_NEUE} _h order-2 mt-[30px] md:mt-[54px] relative z-50`}>
                     <span className="text-_green">Ready</span> to use power of the Syndicate?
                 </h2>
 
-                <div className="order-3 md:order-4 mt-[30px] md:mt-[70px] relative z-100 text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] md:text-center font-extrabold">
+                <div data-aos="fade-right" data-aos-duration="1500" className="order-3 md:order-4 mt-[30px] md:mt-[70px] relative z-100 text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] md:text-center font-extrabold">
                     You can try to interest us!
                 </div>
 
-                <Image src={xxx} alt="x X x" className="block order-4 md:order-3 w-[38px] sm:w-[50px] md:w-[70px] md:mx-auto mt-[18px] md:mt-0 relative z-50"/>
+                <Image data-aos="fade-right" data-aos-duration="1500" src={xxx} alt="x X x" className="block order-4 md:order-3 w-[38px] sm:w-[50px] md:w-[70px] md:mx-auto mt-[18px] md:mt-0 relative z-50"/>
 
                 <form className="flex order-5 flex-col md:flex-row mt-[24px] md:mt-[30px] gap-2.5 relative z-50" onSubmit={sendForm}>
-                    <input type="text" className="block md:w-1/3 rounded-[20px] bg-[#A0A9FF] px-9 py-4 font-medium text-[16px] border-[2px] border-white placeholder-white" placeholder="Name" onChange={(e)=>setName(e.target.value)}/>
-                    <input type="email" className="block md:w-1/3 rounded-[20px] bg-[#A0A9FF] px-9 py-4 font-medium text-[16px] border-[2px] border-white placeholder-white" placeholder="Email" onChange={(e)=>setEmail(e.target.value)}/>
-                    <button disabled={status === 'success' || status === 'loading'} type="submit" className={`${status === 'success' ? 'bg-_blue' : 'bg-_green'} uppercase block md:w-1/3 rounded-[20px] py-4 text-center font-extrabold text-black`}>
+                    <input data-aos="fade-right" data-aos-duration="1500" type="text" className="block md:w-1/3 rounded-[20px] bg-[#A0A9FF] px-9 py-4 font-medium text-[16px] border-[2px] border-white placeholder-white" placeholder="Name" onChange={(e)=>setName(e.target.value)}/>
+                    <input data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200" type="email" className="block md:w-1/3 rounded-[20px] bg-[#A0A9FF] px-9 py-4 font-medium text-[16px] border-[2px] border-white placeholder-white" placeholder="Email" onChange={(e)=>setEmail(e.target.value)}/>
+                    <button data-aos="fade-right" data-aos-duration="1500" data-aos-delay="400" disabled={status === 'success' || status === 'loading'} type="submit" className={`${status === 'success' ? 'bg-_blue' : 'bg-_green'} uppercase block md:w-1/3 rounded-[20px] py-4 text-center font-extrabold text-black`}>
                         { status === 'default' && 'Send ' }
                         { status === 'success' && 'Success' }
                         { status === 'error' && 'Sorry, unknown error' }

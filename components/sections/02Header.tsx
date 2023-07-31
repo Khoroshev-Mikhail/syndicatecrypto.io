@@ -57,10 +57,11 @@ export default function Header(){
                 <Image src={main_mobile} alt="SYNDYCATE" className="block md:hidden pt-24 -mb-6 xs:-mb-10 sm:-mb-20  w-full"/>
 
                 <div className="_wrapper w-full !max-w-none !pr-2 absolute top-10 left-0 md:text-center">
-                    <h2 className={`${BEBAS_NEUE} _h relative`}>
-                        BE PART <br className="md:hidden"/>
+                    <h2 data-aos="fade-right" data-aos-duration="1500" className={`${BEBAS_NEUE} _h relative`}>
+                        <span>BE PART <br className="md:hidden"/>
                         <span className="italic">OF</span> <span className="text-_green">SYNDICATE</span>
-                        <div className="absolute top-0 right-0 flex justify-end w-full md:hidden">
+                        </span>
+                        <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1500" className="absolute top-0 right-0 flex justify-end w-full md:hidden">
                             <Social />
                         </div>
                     </h2>
@@ -68,7 +69,7 @@ export default function Header(){
                 <div className="absolute bottom-[16%] xs:bottom-[15%] sm:bottom-[12%] md:top-0 md:bottom-auto w-full flex justify-center">
                     <Image src={xxx} alt="x X x" className="mx-auto w-10 xs:w-12 sm:w-14 md:р"/>
                 </div>
-                <div className="_wrapper !max-w-none absolute w-full flex-col justify-center bottom-[7%] xs:bottom-[7%] sm:bottom-[5.5%] md:bottom-[10%] lg:bottom-[14%]">
+                <div data-aos="zoom-in" data-aos-duration="1500" className="_wrapper !max-w-none absolute w-full flex-col justify-center bottom-[7%] xs:bottom-[7%] sm:bottom-[5.5%] md:bottom-[10%] lg:bottom-[14%]">
                     <a href="#07Feedback" className="block text-center mt-4 mx-auto order-5 uppercase bg-_green w-full md:w-[235px] _button text-black">
                         BUY <span className="md:hidden">NOW</span>
                     </a>
