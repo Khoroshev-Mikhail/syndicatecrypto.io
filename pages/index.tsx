@@ -13,7 +13,7 @@ export default function Home() {
                 <title>SYNDICATE</title>
                 <meta httpEquiv="content-language" content="en" />
                 <meta name="description" content="Shiba inu had an affair with a wolf and a wolf cub was born. His mission is to unite everyone and become the king of memecoins" />
-                <link rel="shortcut icon" href="/images/wolf-ticker.png" />
+                <link rel="shortcut icon" href="/img/favicon.ico" />
             </Head>
             
             <Header />
