@@ -27,6 +27,11 @@ export default function Mission(){
                         <Image src={coins} alt="COINS SYNDICATE" className="mt-[30px] w-full xs:max-w-[353px]"/>
                     </div>
                 </div>
+                <div>
+                <a href="https://wp.syndicatecrypto.io" className="relative z-50 mt-[40px] md:mt-[64px] _button mx-auto order-5  bg-_blue w-full xs:w-[287px] ">
+                    WHITE PAPER
+                </a>
+                </div>
             </div>
         </section>
     )

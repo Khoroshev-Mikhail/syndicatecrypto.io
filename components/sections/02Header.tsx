@@ -4,12 +4,6 @@ import Image from "next/image";
 import xxx from '../../public/img/02Header/xxx.svg'
 import main from '../../public/img/02Header/main.webp'
 import main_mobile from '../../public/img/02Header/main_mobile.webp'
-import round from '../../public/img/02Header/round.png'
-import coins_left from '../../public/img/02Header/coins_left.png'
-import coins_right from '../../public/img/02Header/coins_right.png'
-import grid from '../../public/img/02Header/grid.png'
-import tg from '../../public/img/01Nav/tg.svg'
-import twitter from '../../public/img/01Nav/twitter.svg'
 import burger from '../../public/img/01Nav/burger.svg'
 import cross from '../../public/img/01Nav/cross.svg'
 import burger_mobile from '../../public/img/01Nav/burger_mobile.svg'
@@ -43,7 +37,7 @@ export default function Header(){
             {/* Выдвижное меню */}
             <div className={`${isHidden ? 'hidden' : 'block'} absolute z-50 top-0 left-0 w-full min-h-screen bg-_blue rounded-b-2xl `}>
                 <menu className={`${BEBAS_NEUE} _wrapper text-[40px] sm:text-[48px] md:text-[56px] lg:text-[60px] xl:text-[66px] text-white`}>
-                    <li className="flex justify-end py-[13px] sm:py-[26px] md:py-[39px] ">
+                    <li className="flex justify-end py-[13px] sm:py-[26px] md:py-[39px]">
                         <Image className="cursor-pointer w-[30px] h-[30px] sm:w-[49px] sm:h-[49px]" src={ cross } alt="menu-toggle" onClick={()=> setIsHidden(true) }/>
                     </li>
                     <li className="flex justify-end w-full" onClick={()=> setIsHidden(true) }><a href="#02Header">HOME</a></li>
@@ -52,18 +46,15 @@ export default function Header(){
                     <li className="flex justify-end w-full"><a href="#05Partners">PARTNERS</a></li>
                     <li className="flex justify-end w-full"><a href="#06Roadmap">ROADMAP</a></li>
                     <li className="flex justify-end w-full"><a href="#07Feedback">CONTACTS</a></li>
-                    <li className="pt-[60px] xl:pt-[100px]">
-                        {/* <Social green/> */}
+                    <li className="flex justify-end w-full pt-[60px] xl:pt-[100px] ">
+                        <Social white/>
                     </li>
-                    <li className=" absolute w-full left-0 bottom-[20px] px-[20px]">
-                        {/* <Buynow /> Если нужна прыгающая кнопка - просто добави в классы animate-bounce */}
-                    </li>
+                    <li className="flex justify-end w-full pt-5"><a href="https://wp.syndicatecrypto.io">WHITE PAPER</a></li>
                 </menu>
             </div>
             {/* Выдвижное меню */}
 
             <div className="w-full mx-auto relative">
-            {/* xl:-mt-32 sm:-mt-20 md:-mb-40 xl:-mb-56 */}
                 <Image src={main} alt="SYNDYCATE" className="hidden md:block md:-mt-[7%] -mt-[10%] -mb-[14%] w-full"/>
                 <Image src={main_mobile} alt="SYNDYCATE" className="block md:hidden pt-24 -mb-6 xs:-mb-10 sm:-mb-20  w-full"/>
 

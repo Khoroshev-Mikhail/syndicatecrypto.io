@@ -68,7 +68,7 @@ export default function Tokenomics(){
                                     1% We send to charity
                                 </li>
                                 <li className="mt-[10px]">
-                                    % Returns to liquidity
+                                    1% Returns to liquidity
                                 </li>
                             </ul>
                         </div>
@@ -88,7 +88,7 @@ export default function Tokenomics(){
                                     1% We send to charity
                                 </li>
                                 <li className="mt-[10px]">
-                                    % Returns to liquidity
+                                    1% Returns to liquidity
                                 </li>
                             </ul>
                         </div>
