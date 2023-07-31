@@ -23,10 +23,10 @@ export default function Partners(){
                     <div className="col-span-2 sm:col-span-1 flex justify-center">
                         <Image src={third} alt="" className="block"/>
                     </div>
-                    <div className="col-span-3 sm:col-span-1 flex justify-center">
+                    <div className="col-span-3 sm:col-span-1 flex md:justify-center justify-end w-full pr-[10%]">
                         <Image src={fourth} alt="" className="block"/>
                     </div>
-                    <div className="col-span-3 sm:col-span-1 flex justify-center">
+                    <div className="col-span-3 sm:col-span-1 flex md:justify-center justify-start w-full pl-[10%]">
                         <Image src={fifth} alt="" className="block"/>
                     </div>
                 </div>

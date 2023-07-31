@@ -7,6 +7,9 @@ import { BEBAS_NEUE } from "@/pages/_app";
 export default function Ticker({ green } : { green?: boolean }){
     return(
         <div className="relative">
+            <div className="absolute top-0 left-0 w-full h-full">
+                {/* Заглушка для устранения ошибки. Ошибка - при свайпе экрана на мобилках - строка уходит в сторону свайпа. Единоразово */}
+            </div>
             <Marquee autoFill direction={green ? 'right' : 'left'}>
                 <div className={`${BEBAS_NEUE} ${green ? 'bg-_green text-_blue' : 'bg-_blue'} mx-[-1px] uppercase flex xs:text-[30px]`}>
                     <div className="px-[9px] flex flex-col justify-center">

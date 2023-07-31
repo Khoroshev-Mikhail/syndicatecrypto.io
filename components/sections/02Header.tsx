@@ -4,16 +4,15 @@ import Image from "next/image";
 import xxx from '../../public/img/02Header/xxx.svg'
 import main from '../../public/img/02Header/main.webp'
 import main_mobile from '../../public/img/02Header/main_mobile.webp'
-import burger from '../../public/img/01Nav/burger.svg'
-import cross from '../../public/img/01Nav/cross.svg'
-import burger_mobile from '../../public/img/01Nav/burger_mobile.svg'
+import burger from '../../public/img/02Header/burger.svg'
+import cross from '../../public/img/02Header/cross.svg'
 import { useState } from "react";
 import Social from "../elements/Social";
 
 export default function Header(){
     const [ isHidden, setIsHidden ] = useState<boolean>(true)
     return(
-        <section id="02Header" className="_section relative flex flex-col bg-[url('/img/02Header/smoke_mobile.png')] md:bg-[url('/img/02Header/smoke.png')] bg-no-repeat bg-bottom bg-cover">
+        <section id="02Header" className="_section relative flex flex-col bg-[url('/img/02Header/smoke_mobile.webp')] md:bg-[url('/img/02Header/smoke.webp')] bg-no-repeat bg-bottom bg-cover">
 
             <div className="_wrapper w-full">
                 <div className="flex justify-between my-4 md:my-8 xl:my-10">
@@ -28,8 +27,7 @@ export default function Header(){
                     </h1>
 
                     <div className="flex flex-col justify-center pb-1 relative z-40" onClick={()=> setIsHidden(false) }>
-                        <Image src={burger} alt="Menu" className="hidden md:block"/>
-                        <Image src={burger_mobile} alt="Menu" className="block md:hidden"/>
+                        <Image src={burger} alt="Menu" className="w-[39px] md:w-auto"/>
                     </div>
                 </div>
             </div>

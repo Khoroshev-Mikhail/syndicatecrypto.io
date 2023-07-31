@@ -1,8 +1,8 @@
 import { BEBAS_NEUE } from "@/pages/_app";
 import Image from "next/image";
-import coins from '../../public/img/03Mission/coins.svg'
-import smoke from '../../public/img/03Mission/smoke.png'
-import smoke_mobile from '../../public/img/03Mission/smoke_mobile.png'
+import coins from '../../public/img/03Mission/coins.webp'
+import smoke from '../../public/img/03Mission/smoke.webp'
+import smoke_mobile from '../../public/img/03Mission/smoke_mobile.webp'
 
 export default function Mission(){
     return(

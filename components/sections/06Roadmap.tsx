@@ -4,10 +4,10 @@ import arrow_1 from '../../public/img/06Roadmap/arrow_1.svg'
 import arrow_2 from '../../public/img/06Roadmap/arrow_2.svg'
 import arrow_3 from '../../public/img/06Roadmap/arrow_3.svg'
 import arrow_mobile from '../../public/img/06Roadmap/arrow_mobile.svg'
-import bg_mobile from '../../public/img/06Roadmap/bg_mobile.png'
-import bg from '../../public/img/06Roadmap/bg.png'
-import eclipse from '../../public/img/06Roadmap/eclipse.png'
-import coins from '../../public/img/06Roadmap/coins.png'
+import bg_mobile from '../../public/img/06Roadmap/bg_mobile.webp'
+import bg from '../../public/img/06Roadmap/bg.webp'
+import eclipse from '../../public/img/06Roadmap/eclipse.webp'
+import coins from '../../public/img/06Roadmap/coins.webp'
 
 export default function Roadmap(){
     return(
