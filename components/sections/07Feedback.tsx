@@ -56,7 +56,7 @@ export default function Feedback(){
                 <Image data-aos="fade-right" data-aos-duration="1500" src={xxx} alt="x X x" className="block order-4 md:order-3 w-[38px] sm:w-[50px] md:w-[70px] md:mx-auto mt-[18px] md:mt-0 relative z-50"/>
 
                 <form className="flex order-5 flex-col md:flex-row mt-[24px] md:mt-[30px] gap-2.5 relative z-50" onSubmit={sendForm}>
-                    <input data-aos="fade-right" data-aos-duration="1500" type="text" className="block md:w-1/3 rounded-[20px] bg-[#A0A9FF] px-9 py-4 font-medium text-[16px] border-[2px] border-white placeholder-white" placeholder="Name" onChange={(e)=>setName(e.target.value)}/>
+                    <input data-aos="fade-right" data-aos-duration="1500" type="text" className="block md:w-1/3 rounded-[20px] bg-[#A0A9FF] px-9 py-4 font-medium text-[16px] border-[2px] border-white placeholder-white" placeholder="Your Project" onChange={(e)=>setName(e.target.value)}/>
                     <input data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200" type="email" className="block md:w-1/3 rounded-[20px] bg-[#A0A9FF] px-9 py-4 font-medium text-[16px] border-[2px] border-white placeholder-white" placeholder="Email" onChange={(e)=>setEmail(e.target.value)}/>
                     <button data-aos="fade-right" data-aos-duration="1500" data-aos-delay="400" disabled={status === 'success' || status === 'loading'} type="submit" className={`${status === 'success' ? 'bg-_blue' : 'bg-_green'} uppercase block md:w-1/3 rounded-[20px] py-4 text-center font-extrabold text-black`}>
                         { status === 'default' && 'Send ' }
