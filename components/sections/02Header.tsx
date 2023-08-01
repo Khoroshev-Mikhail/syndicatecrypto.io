@@ -44,10 +44,10 @@ export default function Header(){
                     <li className="flex justify-end w-full"><a href="#05Partners">PARTNERS</a></li>
                     <li className="flex justify-end w-full"><a href="#06Roadmap">ROADMAP</a></li>
                     <li className="flex justify-end w-full"><a href="#07Feedback">CONTACTS</a></li>
-                    <li className="flex justify-end w-full pt-[60px] xl:pt-[100px] ">
+                    <li className="flex justify-end w-full"><a href="https://wp.syndicatecrypto.io">WHITE PAPER</a></li>
+                    <li className="flex justify-end w-full py-[60px] xl:py-[100px] ">
                         <Social white/>
                     </li>
-                    <li className="flex justify-end w-full pt-5"><a href="https://wp.syndicatecrypto.io">WHITE PAPER</a></li>
                 </menu>
             </div>
             {/* Выдвижное меню */}

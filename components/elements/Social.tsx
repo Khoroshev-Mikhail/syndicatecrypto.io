@@ -6,7 +6,7 @@ import twitter_white from '../../public/img/Social/twitter_white.svg'
 
 export default function Social({ white }: {white?: boolean}){
     return(
-        <div className="flex gap-x-1">
+        <div className="flex gap-x-1 relative z-50">
             <a href='https://twitter.com/syndicatedefi/status/1684878414992625664?s=46&t=Xym74jAFNv1CcH-yxiC9CA'>
                 <Image src={white ? twitter_white : twitter} alt="Twitter" className="block w-[30px] xs:w-auto"/>
             </a>

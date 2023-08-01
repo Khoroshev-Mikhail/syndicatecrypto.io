@@ -16,17 +16,15 @@ export default function Mission(){
                     </div>
                     <div data-aos="fade-right" data-aos-duration="1500" className="w-full mt-[20px] md:mt-0 md:w-1/2 flex flex-col font-extrabold text-[16px] xs:text-[18px] sm:text-[20px] md:font-bold md:text-[22px]">
                         <div>
-                            We throw our efforts into fighting the market and every
-                            day looking for gems that give xxx with the help of our all bots and whale connections. All our proceeds will go
-                            to the development of a fund for the community and charity!
+                        We throw our efforts into the market to fight and looking for gems  that give us XXX by our bots , whale connections in daily basis . All our proceeds directly goes to Fund Development  for our community and charity !
                         </div>
                         <Image src={coins} alt="COINS SYNDICATE" className="mt-[30px] w-full xs:max-w-[353px]"/>
                     </div>
                 </div>
                 <div>
-                <a data-aos="zoom-in" data-aos-duration="1000"  href="https://wp.syndicatecrypto.io" className="relative z-50 mt-[40px] md:mt-[64px] _button mx-auto order-5  bg-_blue w-full xs:w-[287px] ">
-                    WHITE PAPER
-                </a>
+                    <a data-aos="zoom-in" data-aos-duration="1000"  href="https://wp.syndicatecrypto.io" className="relative z-50 mt-[40px] md:mt-[64px] _button mx-auto order-5  bg-_blue w-full xs:w-[287px] ">
+                        WHITE PAPER
+                    </a>
                 </div>
             </div>
         </section>

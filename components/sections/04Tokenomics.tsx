@@ -60,7 +60,7 @@ export default function Tokenomics(){
                         <div >
                             <p className={`${BEBAS_NEUE} _text-26-40 uppercase`}>
                                 <Image src={sell_tax} alt="icon" className="relative inline mr-[15px] top-[2px] left-[-2px]"/>
-                                Sell Tax
+                                Sell Tax 3%
                             </p>
                             <ul className="font-extrabold grid grid-cols-1 md:grid-cols-2 _text-12-20 leading-1 pt-[15px]">
                                 <li className="block md:col-span-2">
@@ -80,7 +80,7 @@ export default function Tokenomics(){
                         <div >
                             <p className={`${BEBAS_NEUE} _text-26-40 uppercase`}>
                                 <Image src={buy_tax} alt="icon" className="relative inline mr-[15px] top-[2px] left-[-2px]"/>
-                                Buy Tax
+                                Buy Tax 3%
                             </p>
                             <ul className="font-extrabold grid grid-cols-1 md:grid-cols-2 _text-12-20 leading-1 pt-[15px]">
                                 <li className="block md:col-span-2">

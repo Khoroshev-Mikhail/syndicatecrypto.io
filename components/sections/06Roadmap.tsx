@@ -46,8 +46,8 @@ export default function Roadmap(){
                             </div>
                         </div>
                         <div className="w-full lg:w-1/2 lg:pt-20 relative">
-                            <Image data-aos="zoom-in" data-aos-duration="1500" src={arrow_1} alt="arrow" className="hidden lg:inline absolute top-4 -left-28 z-50"/>
-                            <Image data-aos="zoom-in" data-aos-duration="1500" src={arrow_mobile} alt="arrow" className="absolute -top-[45%] -right-2 lg:hidden z-50"/>
+                            <Image data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="500" src={arrow_1} alt="arrow" className="hidden lg:inline absolute top-4 -left-28 z-50"/>
+                            <Image data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="500" src={arrow_mobile} alt="arrow" className="absolute -top-[45%] -right-2 lg:hidden z-50"/>
 
                             <div data-aos="fade-right" data-aos-duration="1500" className="flex flex-col xs:flex-row bg-_black_div rounded-[20px] h-auto p-6 xs:p-10 w-full">
                                 <span className={`${BEBAS_NEUE} block w-full xs:w-1/3 uppercase text-_blue text-[26px] sm:text-[30px] md:text-[34px] xl:text-[40px]`}>
@@ -67,8 +67,8 @@ export default function Roadmap(){
                     
                     <div className="flex flex-col lg:flex-row w-full gap-5">
                         <div className="w-full lg:w-1/2 lg:-mt-14 relative">
-                            <Image data-aos="zoom-in" data-aos-duration="1500" src={arrow_2} alt="arrow" className="hidden lg:inline absolute -top-14 -right-16 z-50"/>
-                            <Image data-aos="zoom-in" data-aos-duration="1500" src={arrow_mobile_2} alt="arrow" className="absolute -top-[45%] -left-2 lg:hidden z-50"/>
+                            <Image data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="500" src={arrow_2} alt="arrow" className="hidden lg:inline absolute -top-14 -right-16 z-50"/>
+                            <Image data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="500" src={arrow_mobile_2} alt="arrow" className="absolute -top-[45%] -left-2 lg:hidden z-50"/>
 
                             <div data-aos="fade-right" data-aos-duration="1500" className="flex flex-col xs:flex-row bg-_black_div rounded-[20px] h-auto p-6 xs:p-10 w-full">
                                 <span className={`${BEBAS_NEUE} block w-full xs:w-1/3 uppercase text-_blue text-[26px] sm:text-[30px] md:text-[34px] xl:text-[40px]`}>
@@ -84,8 +84,8 @@ export default function Roadmap(){
                             </div>
                         </div>
                         <div className="w-full lg:w-1/2 relative">
-                            <Image data-aos="zoom-in" data-aos-duration="1500" src={arrow_3} alt="arrow" className="hidden lg:inline absolute bottom-4 -left-28 z-50"/>
-                            <Image data-aos="zoom-in" data-aos-duration="1500" src={arrow_mobile} alt="arrow" className="absolute -top-[45%] -right-2 lg:hidden z-50"/>
+                            <Image data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="500" src={arrow_3} alt="arrow" className="hidden lg:inline absolute bottom-4 -left-28 z-50"/>
+                            <Image data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="500" src={arrow_mobile} alt="arrow" className="absolute -top-[45%] -right-2 lg:hidden z-50"/>
                             
                             <div data-aos="fade-right" data-aos-duration="1500" className="flex flex-col xs:flex-row bg-_black_div rounded-[20px] h-auto p-6 xs:p-10 w-full">
                                 <span className={`${BEBAS_NEUE} block w-full xs:w-1/3 uppercase text-_blue text-[26px] sm:text-[30px] md:text-[34px] xl:text-[40px]`}>
