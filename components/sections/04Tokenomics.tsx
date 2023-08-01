@@ -89,10 +89,10 @@ export default function Tokenomics(){
                                     1% Distributed among all token holders
                                 </li>
                                 <li className="mt-[10px]">
-                                    1% We send to charity
+                                    1% Returns to liquidity
                                 </li>
                                 <li className="mt-[10px]">
-                                    1% Returns to liquidity
+                                    1% We send to charity
                                 </li>
                             </ul>
                         </div>
@@ -109,10 +109,10 @@ export default function Tokenomics(){
                                     1% Distributed among all token holders
                                 </li>
                                 <li className="mt-[10px]">
-                                    1% We send to charity
+                                    1% Returns to liquidity
                                 </li>
                                 <li className="mt-[10px]">
-                                    1% Returns to liquidity
+                                    1% We send to charity
                                 </li>
                             </ul>
                         </div>
@@ -120,9 +120,9 @@ export default function Tokenomics(){
 
                 </div>
 
-                <button data-aos="zoom-in" data-aos-duration="1000" className="relative z-50 mt-[30px] md:mt-[54px] _button mx-auto order-5  bg-_blue w-full xs:w-[287px] ">
+                <a href="https://drive.google.com/file/d/13tdciPVJ99-ADK2IvcelzJF-y1ut-b9-/view?pli=1" data-aos="zoom-in" data-aos-duration="1000" className="relative z-50 mt-[30px] md:mt-[54px] _button mx-auto order-5  bg-_blue w-full xs:w-[287px] ">
                     AUDIT CERTIFICATE
-                </button>
+                </a>
 
             </div>
 
