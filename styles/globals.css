@@ -29,3 +29,12 @@ body {
 ._text-12-20{
     @apply text-[12px] xs:text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] 
 }
+@keyframes _fade-out {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  /* Добавляем класс с анимацией */
+  ._animate-fade-out {
+    animation: _fade-out 3s ease-in-out;
+  }

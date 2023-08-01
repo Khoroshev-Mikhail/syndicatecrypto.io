@@ -7,11 +7,33 @@ import buy_tax from "../../public/img/04Tokenomics/buy-tax.svg"
 import copy_icon from "../../public/img/04Tokenomics/copy-icon.svg"
 import Ticker from "../elements/ticker"
 import { BEBAS_NEUE } from "@/pages/_app"
+import { useEffect, useState } from "react"
 
 export default function Tokenomics(){
-    const copy = () => navigator.clipboard.writeText('0x683Bac1d16Fc166baA6F7509ADf509bE66a2E514')
+    const [isVisible, setIsVisible] = useState(false);
+    const [timeOut, setTimeOut] = useState<NodeJS.Timeout | null>(null)
+    const copy = () => {
+        navigator.clipboard.writeText('0x683Bac1d16Fc166baA6F7509ADf509bE66a2E514')
+        if(!isVisible){
+            setIsVisible(true)
+            if (timeOut) {
+                clearTimeout(timeOut)
+            }
+            setTimeOut(setTimeout(() => setIsVisible(false), 3000))
+        }
+    }
+    useEffect(() => {
+        return () => {
+            if (timeOut) {
+                clearTimeout(timeOut);
+            }
+        }
+      }, [timeOut])
     return(
         <section id="04Tokenomics" className="_section relative pt-[52px] md:pt-[153px] ">
+            {isVisible && <div className="_animate-fade-out text-white fixed bottom-0 left-0 z-50 w-full h-auto p-4 rounded-t-2xl text-center bg-_blue _text-26-40">
+                Copied!
+            </div>}
             
             {/* BG ECLIPSE */}
             <div className="absolute left-0 h-[120%] -bottom-52 md:-bottom-80 w-full hidden sm:block z-0 bg-[url('/img/04Tokenomics/eclipse.webp')] bg-left bg-no-repeat"></div>
