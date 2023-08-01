@@ -46,7 +46,7 @@ export default function Tokenomics(){
                     </div>
 
                     <div data-aos="fade-right" data-aos-duration="1500" onClick={copy} className="relative cursor-pointer col-span-1 row-span-1 p-[30px] bg-[#191C25] rounded-2xl _shadow sm:p-[27px] sm:col-start-1 sm:col-end-2 sm:row-span-2 sm:row-start-5 sm:row-end-7">
-                        <Image src={copy_icon} alt="icon" className="absolute top-[10px] right-[10px] w-[20px]"/>
+                        <Image src={copy_icon} alt="copy" className="absolute top-[10px] right-[10px] w-[20px]"/>
                         <p className={`${BEBAS_NEUE} _text-26-40 uppercase`}>
                             <Image src={smart_contract} alt="icon" className="relative inline mr-[15px] top-[2px] left-[-2px]"/>
                             Smart Contract
