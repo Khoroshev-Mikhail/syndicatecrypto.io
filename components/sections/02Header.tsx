@@ -70,8 +70,8 @@ export default function Header(){
                     <Image src={xxx} alt="x X x" className="mx-auto w-10 xs:w-12 sm:w-14 md:р"/>
                 </div>
                 <div data-aos="zoom-in" data-aos-duration="1500" className="_wrapper !max-w-none absolute w-full flex-col justify-center bottom-[7%] xs:bottom-[7%] sm:bottom-[5.5%] md:bottom-[10%] lg:bottom-[14%]">
-                    <a href="#07Feedback" className="block text-center mt-4 mx-auto order-5 uppercase bg-_green w-full md:w-[235px] _button text-black">
-                        BUY <span className="md:hidden">NOW</span>
+                    <a href="https://www.pinksale.finance/launchpad/0x83DAE91150b550cbFAaecf9682535811d085521b?chain=ETH" className="block text-center mt-4 mx-auto order-5 uppercase bg-_green w-full md:w-[235px] _button text-black">
+                        Pink Sale
                     </a>
                 </div>
             </div>
